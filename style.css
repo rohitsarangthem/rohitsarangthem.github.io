@@ -1,0 +1,637 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Muli:700');
+
+:root{
+	--get-button-text-color: #7516E2;
+}
+
+#paragraph{
+	font-weight: light;
+	
+}
+
+#title{
+	font-weight: bold;
+}
+
+button{
+	border: none;
+	background-color: #7516E2;
+	color: white;
+	padding: 10px;
+	border-radius: 15px;
+	font-weight: bold;
+	font-family: montserrat;
+	}
+button:focus{
+	outline: 0;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/*Links*/
+
+a{
+	color: black
+}
+
+a:active{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+	color: black;
+}
+
+
+body{
+	font-family: montserrat, muli;
+}
+
+/*Main Menu*/
+#logo{
+	width: 130px;
+	margin-top: 3px;
+}
+
+ul li{
+	list-style: none;
+	padding: 10px;
+	display: inline;
+}
+
+.nav{
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+ul{
+	margin: 25px;
+}
+
+
+
+
+/*NavBar toggle*/
+
+
+ .show-mobile {
+        display: none;
+    }
+
+
+/*Toggler Start*/
+
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+
+/*Toggler End*/
+
+/*
+*/
+/*
+*/
+/*
+*/
+
+/*Responsive*/
+
+@media only screen and (max-width: 786px)  {
+
+	/*Responsive Menu*/
+	
+	.show-mobile {
+        display: block;
+		float: right;
+		padding: 20px;
+    }
+
+	.hide-mobile {
+		display: none;
+	}
+	
+	.hide-desktop{
+	display: none;	
+}
+
+	#jacky{
+		width: 100%;
+	}
+	.jacky-name{
+		font-size: 23px;
+		margin: 0px;
+		padding: 0px;
+	}
+	.from-the{
+		margin-left: 40px;
+	}
+	.paragraph-lm{
+		font-size: 16px;
+	}
+	.paragraph{
+		text-align: center;
+	}
+	.our-services1{
+		margin-left: 10px;
+	}
+	.our-services2{
+		margin-left: 10px;
+	}
+	.our-services3{
+		margin-left: 10px;
+	}
+	
+	/*Text area*/
+	.cards-text{
+		width: 220%;
+		font-size: 30px;
+	}
+	.img-card{
+		height: 320px;
+		width: 220%;
+		object-fit: cover;
+	}
+	
+	/*Recent News*/
+	
+	.paragraph{
+		font-size: 13px;
+		text-align: left;
+	}
+	.recent-news-img{
+		width: 10%;
+	}
+	
+	/*Recent News Area*/	
+	
+	
+	.recent-news{
+		flex-direction: column;
+	}
+	.recent-news-img{
+		width: 100%;
+		height: 10px;
+	}
+	.recent-news-para{
+		text-align: left;
+	}
+	.button{
+		
+	}
+	/*End Recent News Area*/
+
+
+	/*Lamjingba Groups Of Companies*/
+	.lm-groups-of-companies{
+		margin-top: -25%;
+	}
+	.companies{
+		flex-direction: column;
+	
+	}
+	.companies2{
+		flex-direction: column;
+	}
+
+
+/*Contact Us Area*/
+
+	.map{
+		margin-left: -3%;
+	}
+
+	.contact-area{
+		margin-top: 150%;
+		flex-direction: column
+		
+	}
+
+	.contact-us{
+		flex-direction: column;
+	}
+
+
+	.email-area{
+		flex-direction: column;
+		margin-top: 10%;
+		padding: 0;
+		width: 100%;
+	}
+
+	/*Form*/
+
+	.form{
+		margin-left: -20%;
+		width: 300px;
+		height: 450px;
+
+	}
+	
+
+	
+	
+	
+	
+	
+}
+
+
+
+@media only screen and (min-width: 775px)  {
+	
+	.cards{
+		display: flex;
+		
+	}
+	
+	.img-card{
+		height: 200px;
+		width: 100%;
+		object-fit: cover;
+		
+	}
+	
+}
+
+
+/*End Of Responsive*/
+/*
+*/
+/*
+*/
+/*
+/*
+*/
+/*
+*/
+
+/*Starting Of Normal Layout*/
+
+/*chairman Image area*/
+
+#jacky{
+	object-fit: cover;
+	width: 100%;
+
+	
+}
+.jacky-name{
+	text-align: center;
+	background-color: rgb(216, 216, 216);
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+	
+}
+.name{
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 30px;
+}
+
+.title{
+	margin: 0;
+	padding: 0;
+}
+
+.fromthedesk{
+	float: right;
+	margin-top: 20px;
+	width: 100%;
+	
+}
+
+/*End chairman Image area*/
+
+#red-img{
+	width: 100%;
+}
+
+.flex-container{
+	display: flex;
+	width: 100%;
+	align-content: space-around;
+	align-content: flex-start;
+}
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+/*Cards area*/
+
+/*Blue-bg*/
+#blue-bg{
+	position: absolute;
+	z-index: -1;
+	
+}
+
+.our-services1{
+	padding: 20px;
+	width: 50%;
+	
+}
+.our-services2{
+	padding: 20px;
+	width: 50%;
+}
+.our-services3{
+	padding: 20px;
+	width: 50%;
+}
+
+
+.cards-text{
+	text-align: center;
+	background-color: white;
+	border: 1px solid #eeefff;
+	padding: 6px;
+	
+}
+
+.card2{
+	margin-top: 20%;
+}
+
+/*End Of Cards area*/
+
+
+
+/*Recent News Area*/
+
+.recent-news{
+	display: flex;
+}
+
+.paragraph{
+	color: grey;
+}
+
+.recent-news-img{
+	height: 450px;
+	object-fit: cover;
+}
+
+
+.recent-news-para{
+	margin-left: 30px;
+	margin-top: 7%;
+	text-align: left;
+}
+
+.button{
+	margin-left: %;
+	margin-top: 20px;
+}
+
+
+/*End Of Recent News*/
+
+
+
+
+/*Lamjingba Groups Of Companies*/
+
+
+.blue-bg2{
+	width: 100%;
+	margin-top: 20%;
+	
+}
+
+.lm-groups-company-area{
+	position: absolute;
+	margin-top: -50%;
+}
+
+
+
+.companies{
+	display: flex;
+	margin-left: -15px;
+	margin-bottom: 20px;
+	margin-top: 5%;
+	width: 100%;
+}
+
+.companies2{
+	display: flex;
+	margin-left: -15px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+
+
+
+#paragraph-com1, #paragraph-com2, #paragraph-com3, #paragraph-com4{
+	background-color: white;
+	padding: 20px;
+	border-radius: 2px;
+	box-shadow: 0px 0px 2px 0px grey;
+	width: 100%;
+	
+}
+
+
+#paragraph-com1{
+	margin-left: 2%;
+}
+#paragraph-com2{
+	margin-left: 2%;
+}
+#paragraph-com3{
+	margin-left: 2%;
+}
+
+#paragraph-com4{
+	margin-left: 2%;
+}
+
+
+
+#paragraph-com1:hover{
+	box-shadow: 4px 0px 10px 1px grey;
+}
+#paragraph-com2:hover{
+	box-shadow: 4px 0px 10px 1px grey;
+}
+#paragraph-com3:hover{
+	box-shadow: 4px 0px 10px 1px grey;
+}
+#paragraph-com4:hover{
+	box-shadow: 4px 0px 10px 1px grey;
+}
+
+
+
+
+.image-top1{
+	margin-left: 80%;
+}
+.image-top2{
+	margin-left: 80%;
+}
+.image-bottom1{
+	margin-left: 80%;
+}
+.image-bottom2{
+	margin-left: 80%;
+}
+
+
+
+
+
+/* End of Lamjingba Groups Of Companies*/
+
+/*Contact Us Area*/
+.contact-us{
+	display: flex;
+}
+
+.email{
+	margin-left: 60px;
+	margin-top: -22px;
+}
+
+.form{
+	padding: 20px;
+	border: 1px solid grey;
+	width: 450px;
+	height: 450px;
+	margin-top: 70px;
+	box-shadow: 10px 0px 7px 1px grey;
+}
+
+.Name, .Email{
+	border: 1px solid black;
+	border-radius: 20px;
+	padding: 15px;
+	width: 100%;
+	outline: none;
+	margin-top: 20px;
+	color: grey;
+	
+}
+
+
+.name{
+	margin-bottom: 20px;
+}
+
+.subscribe{
+	margin-top: -10%;
+}
+
+.map{
+	margin-top: 70px;
+	width: 50%;
+}
+
+
+
+
+#send{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	background-color: #7516E2;
+	color: white;
+	padding: 10px;
+	border-radius: 15px;
+	font-weight: bold;
+	font-family: montserrat;
+	width: 80%;
+	margin-left: 40px;
+	margin-top: 30px;
+}
+
+
+
+/*Image Carousel or Slider*/
+
+.footer-slider-img{
+	object-fit: cover;
+}
+
+
+.header-slider{
+	object-fit: cover;
+	width: 100%;
+}
+
+#slider-title{
+	font-weight: bold;
+	font-size: 50px;
+	color: black;
+	text-align: center;
+	opacity: 1;
+}
+
+#slider-paragraph{
+	font-weight: bold;
+	font-size: 20px;
+	opacity: 10;
+	color: black;
+
+}
+
+#slider-paragraph, #slider-title{
+	background-color: white;
+	opacity: 0.5;
+}
+
+
+
+footer{
+	background-color: lightblue;
+	display: grid;
+	
+	
+	
+}
+
+.copyright{
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
